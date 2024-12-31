@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ *\
+	Контакти
+\* ------------------------------------------------------------ */
+
+.contact-section .section__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 48px
+}
+
+.contact-section .section__content {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.contact-section .section__content p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.contact-section .section__inner img {
+    width: 50%;
+    max-height: 800px;
+    object-fit: contain;
+}
+
+.contact-section .section__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-section .section__form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section .section__form input,
+.contact-section .section__form select,
+.contact-section .section__form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section .section__form input:focus,
+.contact-section .section__form select:focus,
+.contact-section .section__form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-section .section__form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-section .section__form button {
+    background-color: var(--i-primary-color);
+    color: white;
+    border: 2px solid var(--i-primary-color);
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-section .section__form button:hover {
+    background: white;
+    color: var(--i-primary-color)
+}
+
+@media (max-width: 768px) {
+    .contact-section .section__inner {
+        padding: 15px;
+    }
+
+    .contact-section h1 {
+        font-size: 1.8em;
+    }
+
+    .contact-section p {
+        font-size: 1em;
+    }
+
+    .contact-section .section__form {
+        max-width: 100%;
+    }
+}

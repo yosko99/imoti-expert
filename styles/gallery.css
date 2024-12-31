@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Галерия
+\* ------------------------------------------------------------ */
+
+.intro-section {
+    position: relative;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    gap: 4px;
+}
+
+.intro-section h2 {
+    font-size: clamp(38px, 1vw + 1rem, 56px);
+    letter-spacing: 1.5px;
+}
+
+.intro-section h4 {
+    margin-bottom: 8px;
+}
+
+.intro-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    object-fit: cover;
+    z-index: -1;
+}

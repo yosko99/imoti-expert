@@ -1,0 +1,124 @@
+/* ------------------------------------------------------------ *\
+	Начална страница
+\* ------------------------------------------------------------ */
+
+/* За организацията */
+
+.about-section .section__inner {
+    display: flex;
+    gap: 46px;
+}
+
+.about-section h2 {
+    font-size: 46px;
+}
+
+.about-section img {
+    width: 50%;
+    object-fit: contain;
+    max-height: 600px;
+}
+
+.about-section .section__content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.about-section.about-section--reversed .section__inner {
+    flex-direction: row-reverse;
+}
+
+/* Постижения */
+
+.achievements-section .section__inner {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievements-section .section__entry {
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 48px 24px;
+    border: 2px solid var(--i-primary-color);
+    max-width: 400px;
+}
+
+.achievements-section .section__entry img {
+    width: 50px;
+}
+
+
+/* Партньори */
+
+.partners-section .section__inner {
+    display: flex;
+    gap: 64px;
+}
+
+.partners-section .section__content {
+    text-align: right;
+    width: 50%;
+}
+
+.partners-section .section__partners {
+    display: flex;
+    width: 50%;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.partners-section img {
+    width: calc(50% - 64px);
+}
+
+.partners-section .section__content h3 {
+    font-size: clamp(24px, 1vw + 1rem, 40px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+/* Клиенти */
+
+.clients-section {
+    padding: 64px 24px 128px;
+    background: var(--i-gray-color);
+}
+
+.clients-section h2 {
+    margin-top: 0;
+    margin-bottom: 128px;
+}
+
+.clients-section .section__inner {
+    display: flex;
+    gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.clients-section .section__client {
+    background: var(--i-primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 30px;
+}
+
+.clients-section .section__client img {
+    border: 8px solid white;
+    border-radius: 99em;
+    margin-top: -64px;
+}

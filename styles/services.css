@@ -1,0 +1,81 @@
+/* ------------------------------------------------------------ *\
+	Услуги
+\* ------------------------------------------------------------ */
+
+/* Таблица */
+
+.services-table {
+    width: 100%;
+    max-width: 1320px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.services-table thead {
+    background-color: #f8f9fa;
+}
+
+.services-table th,
+.services-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.services-table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.services-table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .services-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .services-table th,
+    .services-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-table thead {
+        display: none;
+    }
+
+    .services-table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #e9ecef;
+    }
+
+    .services-table tbody td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .services-table tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 45%;
+        text-align: left;
+        font-weight: 600;
+    }
+}

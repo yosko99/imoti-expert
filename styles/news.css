@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Новини
+\* ------------------------------------------------------------ */
+
+/* Секция с новини */
+
+.news-section .section__inner {
+    display: flex;
+    column-gap: 8px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.news-section .section__entry {
+    width: calc(33% - 8px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.news-section .section__entry:hover > img {
+    transform: scale(1.03);
+}
+
+.news-section .section__entry > img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-section .section__entry h3 {
+    font-size: clamp(16px, 1vw + 1rem, 20px);
+    line-height: 1.3;
+}
+
+.news-section .entry__date {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: start;
+    opacity: 0.8;
+    margin-top: auto;
+}
+
+.news-section .entry__date img {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Desktop breakpoint */
+
+@media (max-width: 1023px) {
+    .news-section .section__entry {
+        width: calc(50% - 8px);
+    }
+}
+
+/* Tablet breakpoint */
+
+@media (max-width: 767px) {
+    .news-section .section__entry {
+        width: 100%;
+    }
+}
