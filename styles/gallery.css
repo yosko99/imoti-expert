@@ -34,3 +34,10 @@
     object-fit: cover;
     z-index: -1;
 }
+
+@media (max-width: 767px) {
+    .intro-section {
+        position: relative;
+        height: calc(100vh - 70px);
+    }
+}

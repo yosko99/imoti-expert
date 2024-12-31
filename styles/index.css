@@ -10,7 +10,7 @@
 }
 
 .about-section h2 {
-    font-size: 46px;
+    font-size: clamp(32px, 1vw + 1rem, 46px);
 }
 
 .about-section img {
@@ -29,6 +29,23 @@
 
 .about-section.about-section--reversed .section__inner {
     flex-direction: row-reverse;
+}
+
+@media (max-width: 1023px) {
+    .about-section.about-section--reversed .section__inner,
+    .about-section .section__inner {
+        flex-direction: column;
+    }
+
+    .about-section img,
+    .about-section .section__content {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .about-section .ordered-list {
+        padding: 0 20px;
+    }
 }
 
 /* Постижения */
@@ -85,6 +102,25 @@
     margin-bottom: 16px;
 }
 
+@media (max-width: 1023px) {
+    .partners-section .section__inner {
+        flex-direction: column;
+    }
+
+    .partners-section .section__content,
+    .partners-section .section__partners {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .partners-section img {
+        width: calc(50% - 32px);
+        max-width: 300px;
+    }
+}
+
 /* Клиенти */
 
 .clients-section {
@@ -121,4 +157,11 @@
     border: 8px solid white;
     border-radius: 99em;
     margin-top: -64px;
+}
+
+@media (max-width: 1023px) {
+    .clients-section .section__inner {
+        flex-direction: column;
+        gap: 64px;
+    }
 }

@@ -17,17 +17,18 @@
     flex-direction: column;
     gap: 16px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .news-section .section__entry:hover > img {
-    transform: scale(1.03);
+    filter: brightness(0.7);
 }
 
 .news-section .section__entry > img {
     height: 250px;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
 .news-section .section__entry h3 {
@@ -51,15 +52,11 @@
 }
 
 
-/* Desktop breakpoint */
-
 @media (max-width: 1023px) {
     .news-section .section__entry {
         width: calc(50% - 8px);
     }
 }
-
-/* Tablet breakpoint */
 
 @media (max-width: 767px) {
     .news-section .section__entry {
